@@ -395,8 +395,13 @@ header {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     overflow: hidden;
+}
+
+.hero-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .hero-slideshow {
@@ -414,10 +419,10 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-slide.active {
@@ -440,9 +445,22 @@ header {
 .hero-content {
     position: relative;
     z-index: 2;
-    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 600px;
+    margin-left: auto;
+    height: 100%;
     color: var(--white);
-    max-width: 800px;
+}
+
+/* For RTL languages */
+[dir="rtl"] .hero-content {
+    margin-left: 0;
+    margin-right: auto;
+    align-items: flex-end;
 }
 
 .hero-content h1 {
@@ -465,6 +483,31 @@ header {
     animation: fadeInUp 1s ease-out 0.6s both;
 }
 
+/* Responsive styles */
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction: column;
+    }
+    
+    .hero-slideshow {
+        height: 50%;
+        position: relative;
+    }
+    
+    .hero-content {
+        height: 50%;
+        max-width: 100%;
+        padding: 1rem;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    [dir="rtl"] .hero-content {
+        margin-right: 0;
+    }
+}
 /* ===== VISION & MISSION ===== */
 .vision-mission {
     padding: 80px 0;

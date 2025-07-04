@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="html-tag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Consultancy UAE - RABB Businesses</title>
+    <meta name="description" content="Launch & scale your online store with UAE's top e-commerce consultants. Shopify setup, Amazon UAE consultancy, and digital sales strategy.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <header>
+        <!-- Clickable Logo/Title that links to the homepage -->
+        <a href="index.html" class="site-title">
+            <h1>RABB Businesses</h1>
+            <span>E-commerce Consultancy UAE</span>
+        </a>
+        
+        <!-- Navigation Menu (optional) -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Launch & Scale Your Online Store with UAE's Top E-commerce Consultants</h1>
+                <p class="hero-description">Starting or growing your online store? We provide e-commerce consultancy in UAE that drives traffic, increases conversions, and optimizes customer experience. From Shopify setup to SEO for product listings, we guide you every step of the way.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="openBookingModal()">Request Your E-commerce Growth Plan</button>
+                    <a href="#services" class="btn-secondary">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-detail">
+        <div class="container">
+            <h2>Our E-commerce Services</h2>
+            <p class="section-description">Looking for help with e-store setup UAE, digital sales strategy, or Amazon UAE consultancy? We specialize in growth-driven solutions for online businesses.</p>
+            
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">🛒</div>
+                    <h3>E-store Setup & Product Optimization</h3>
+                    <p>Complete online store setup with optimized product listings and user-friendly navigation.</p>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">💰</div>
+                    <h3>Conversion-Focused Website Layout</h3>
+                    <p>Design websites that convert visitors into customers with proven UX/UI principles.</p>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">📢</div>
+                    <h3>Paid Ads & Performance Marketing</h3>
+                    <p>Targeted advertising campaigns that drive qualified traffic and maximize ROI.</p>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">🔍</div>
+                    <h3>SEO for Product Listings</h3>
+                    <p>Optimize your product pages for search engines to increase organic visibility and sales.</p>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">📊</div>
+                    <h3>Analytics & Sales Funnel Optimization</h3>
+                    <p>Data-driven insights to optimize your sales funnel and improve conversion rates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Section -->
+    <section class="platforms-section">
+        <div class="container">
+            <h2>E-commerce Platforms We Work With</h2>
+            <div class="platforms-grid">
+                <div class="platform-card">
+                    <h3>Shopify UAE</h3>
+                    <p>Complete Shopify store setup, theme customization, and app integration for UAE market.</p>
+                </div>
+                <div class="platform-card">
+                    <h3>Amazon UAE</h3>
+                    <p>Amazon seller account setup, product listing optimization, and marketplace strategy.</p>
+                </div>
+                <div class="platform-card">
+                    <h3>Custom Solutions</h3>
+                    <p>Bespoke e-commerce solutions tailored to your specific business requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <h2>Our E-commerce Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Strategy & Planning</h3>
+                    <p>Analyze your market, competitors, and define your e-commerce strategy.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Store Development</h3>
+                    <p>Build and optimize your online store for maximum conversions.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Launch & Marketing</h3>
+                    <p>Launch your store with targeted marketing campaigns to drive traffic.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Optimization & Growth</h3>
+                    <p>Continuously optimize performance and scale your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Build a store that sells, every day</h2>
+                <p>Transform your e-commerce vision into a profitable online business.</p>
+                <button class="btn-primary" onclick="openBookingModal()">Request Your E-commerce Growth Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBookingModal()">&times;</span>
+            <h3>Get Your E-commerce Growth Plan</h3>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone" required>
+                <select required>
+                    <option value="">Select E-commerce Service</option>
+                    <option value="store-setup">New Store Setup</option>
+                    <option value="optimization">Store Optimization</option>
+                    <option value="marketing">E-commerce Marketing</option>
+                    <option value="amazon">Amazon UAE Setup</option>
+                    <option value="consultation">General Consultation</option>
+                </select>
+                <textarea placeholder="Tell us about your e-commerce goals" rows="4"></textarea>
+                <button type="submit" class="btn-primary">Get Growth Plan</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RABB Businesses</h3>
+                    <p>Your trusted partner for business growth in the UAE.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="management-consultancy.html">Management Consultancy</a></li>
+                        <li><a href="marketing-consultancy.html">Marketing Consultancy</a></li>
+                        <li><a href="hr-consultancy.html">HR Consultancy</a></li>
+                        <li><a href="ecommerce-consultancy.html">E-commerce Consultancy</a></li>
+                        <li><a href="quality-consultancy.html">Quality Management</a></li>
+                        <li><a href="hospitality-consultancy.html">Hospitality Consultancy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Dubai, UAE</p>
+                    <p>Email: info@rabbbusinesses.com</p>
+                    <p>Phone: +971 XXX XXXX</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

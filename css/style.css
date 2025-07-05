@@ -1152,7 +1152,8 @@ h1, h2, h3, h4, h5, h6 {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}}/* ===== SERVICES SECTION ===== */
+}}
+/* ===== SERVICES SECTION ===== */
 .services {
     padding: 100px 0;
     background: none;
